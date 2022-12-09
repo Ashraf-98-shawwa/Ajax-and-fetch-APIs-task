@@ -24,6 +24,8 @@ createBtn.onclick = _ => {
     formBtns.style.display = "none"
     inputForm.style.display = "none"
     createToDo()
+    document.getElementById("Title-Input").value = ""
+    document.getElementById("Description-Input").value =""
 }
 
 
