@@ -10,6 +10,10 @@
     <!-- Adding "To do Task" As the title of the page -->
     <title>To do Task </title>
 
+
+    <!-- font awesome file  -->
+    <link rel="stylesheet" href="font-awesome.min.css">
+
     <!-- Linking the css file (style.css with this index html page) -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,12 +21,40 @@
 <body>
 
 
+    <header>
+        <h1>Daily Todo</h1>
 
-    <h1>Daily Todo</h1>
-    <div id="output">
-        
-    </div>
-   
+    </header>
+
+    <main>
+        <div id="output">
+
+        </div>
+
+        <div class="input">
+            <h1>New To Do</h1>
+            <form action="">
+                <input placeholder="Take dog out on walk" class="Title-Input" type="text">
+                <input placeholder="He needs vaccine shot too" class="Description-Input" type="text">
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <button class="button" id="add">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+        <div class="formBtns">
+            <button class="button" id="close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <button class="button" id="create">
+                <i class="fa fa-check" aria-hidden="true"></i>
+            </button>
+        </div>
+
+    </footer>
 
     <script src="index.js"></script>
 </body>

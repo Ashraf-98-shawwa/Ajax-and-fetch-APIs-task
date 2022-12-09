@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
 
+
 }
 
 ul {
@@ -16,16 +17,23 @@ a {
 }
 
 /* Global styling */
-
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: rgb(249 250 251);
     font-family: 'Inter', sans-serif;
-    padding-top: 35px;;
-    
+    padding-top: 35px;
+
 }
 
-h1 {
+
+
+
+
+/* styling the header start */
+header h1 {
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
@@ -34,7 +42,15 @@ h1 {
     text-align: center;
 }
 
-.card {
+/* styling the header end */
+
+
+
+
+
+
+/* styling the main start */
+main .card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -42,22 +58,120 @@ h1 {
     gap: 12px;
     width: 445px;
     height: 150px;
-    margin:35px auto;
+    margin: 35px auto;
     background: #FFFFFF;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
 }
+main .card:last-child{
+    margin-bottom: 150px;
+}
 
-.card .title{
+main .card .title {
     color: #374151;
     font-weight: 800;
     font-size: 24px;
     line-height: 29px;
 }
 
-.card .description {
+main .card .description {
     font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        color: #6B7280;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6B7280;
 }
+
+main .input {
+    width: 455px;
+    height: 341px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 26px 34px;
+    margin: auto;
+    margin-bottom: 150px;
+    display: none;
+}
+
+
+main .input h1 {
+    color: #374151;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+
+main .input .Description-Input,
+main .input .Title-Input {
+    width: 370px;
+    border: 1px solid #F3F4F6;
+    border-radius: 4px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 14px;
+    color: #374151;
+    margin-bottom: 14px;
+}
+
+main .input .Title-Input {
+    height: 44px;
+    margin-top: 40px;
+}
+
+main .input .Description-Input {
+    height: 70px;
+}
+
+
+main .input .Title-Input:focus,
+main .input .Description-Input:focus {
+    outline: 2px solid #F3F4F6;
+}
+
+/* styling the main end */
+
+
+
+
+
+/* styling the footer start */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background-color: rgb(249 250 251);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .formBtns {
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    display:none ;
+}
+
+footer .button {
+    width: 36px;
+    height: 36px;
+    color: #E2E8F0;
+    border: 3px solid #E2E8F0;
+    border-radius: 50%;
+    background-color: rgb(249 250 251);
+    cursor: pointer;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .button:hover {
+        border: 3px solid #94A3B8;
+        color: #94A3B8;
+}
+
+/* styling the footer start */
