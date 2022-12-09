@@ -20,16 +20,38 @@ closeBtn.onclick = _ => {
 }
 
 createBtn.onclick = _ => {
-    addBtn.style.display = "block"
-    formBtns.style.display = "none"
-    inputForm.style.display = "none"
-    createToDo()
-    document.getElementById("Title-Input").value = ""
-    document.getElementById("Description-Input").value =""
+  
+    let input1 = document.getElementById("Title-Input").value 
+    let input1Error = document.getElementById("error-title")
+    let input2 = document.getElementById("Description-Input").value 
+    let input2Error = document.getElementById("error-description")
+    if (input1 == false && input2 == false) {
+        input1Error.style.display = "block"
+        input2Error.style.display = "block"
+    }
+    else if (input1 == false && input2 == true) {
+        input1Error.style.display = "block"
+        input2Error.style.display = "none"
+    }
+    else if (input1 == true && input2 == false) {
+        input1Error.style.display = "none"
+        input2Error.style.display = "block"
+    }
+    
+    else if (input1 != false && input2 != false) {
+        createToDo()
+        input1Error.style.display = "none"
+        input2Error.style.display = "none"
+    }
+   
 }
 
 
 function createToDo() {
+
+    addBtn.style.display = "block"
+    formBtns.style.display = "none"
+    inputForm.style.display = "none"
 
     const myPost = {
         userId: parseInt(Math.random() * 10),
@@ -61,6 +83,8 @@ function createToDo() {
                         
                         `
     document.getElementById("output").innerHTML += newToDo;
+    document.getElementById("Title-Input").value = ""
+    document.getElementById("Description-Input").value = ""
 
 }
 

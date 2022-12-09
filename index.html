@@ -34,8 +34,11 @@
         <div class="input">
             <h1>New To Do</h1>
             <form action="">
-                <input placeholder="Take dog out on walk" id="Title-Input" class="Title-Input" type="text">
-                <input placeholder="He needs vaccine shot too" id="Description-Input" class="Description-Input" type="text">
+                <input minlength="5" placeholder="Take dog out on walk" id="Title-Input" class="Title-Input" type="text">
+                <p id="error-title" style="display:none; color: red; margin:0px 0px 10px 4px; font-size: smaller;">write the title of the task </p>
+                <input  minlength="10"  placeholder="He needs vaccine shot too" id="Description-Input" class="Description-Input" type="text">
+                <p id="error-description" style="display:none; color: red; margin:0px 0px 10px 4px; font-size: smaller;">write the description of the task </p>
+
             </form>
         </div>
     </main>
