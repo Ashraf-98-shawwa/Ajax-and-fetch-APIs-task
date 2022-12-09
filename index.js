@@ -46,7 +46,7 @@ function getToDos() {
             throw Error('sth went wrong');
         }
     };
-
+    
     xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts');
     xhr.send();
 };
