@@ -1,4 +1,5 @@
 
+
 const addBtn = document.getElementById("add")
 const closeBtn = document.getElementById("close")
 const createBtn = document.getElementById("create")
@@ -22,9 +23,12 @@ closeBtn.onclick = _ => {
 createBtn.onclick = _ => {
   
     let input1 = document.getElementById("Title-Input").value 
+    input1 = Boolean(input1)
     let input1Error = document.getElementById("error-title")
     let input2 = document.getElementById("Description-Input").value 
+    input2 = Boolean(input2)
     let input2Error = document.getElementById("error-description")
+    
     if (input1 == false && input2 == false) {
         input1Error.style.display = "block"
         input2Error.style.display = "block"
